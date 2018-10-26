@@ -28,8 +28,7 @@ class BusinessAbstract {
      */
     protected function getMsg($code = 0, $msg = '',$status = false, $data = null) {
         if(!$msg){
-            $msg = !isset(\Business\Errorconst::ERROR_MSG[$code])?\Business\Errorconst::ERROR_MSG[10000]:
-                \Business\Errorconst::ERROR_MSG[$code];
+            $msg = '失败';
         }
         $msgArr = array(
             'status' => (bool) $status === true ? true : false,
