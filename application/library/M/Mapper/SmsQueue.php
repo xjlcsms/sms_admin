@@ -7,13 +7,13 @@
  */
 namespace M\Mapper;
 
-class User extends \M\Mapper\MapperAbstract
+class SmsQueue extends \M\Mapper\MapperAbstract
 {
 
     use \M\Instance;
 
-    protected $modelClass = '\M\User';
+    protected $modelClass = '\M\SmsQueue';
 
-    protected $table = 'user';
+    protected $table = 'sms_queue';
 
 }
